@@ -196,4 +196,23 @@ select {
   display: flex;
   width: 100%;
 }
+
+@media only screen and (max-width: 760px) {
+  fieldset {
+    flex-direction: column;
+  }
+
+  .container {
+    align-items: flex-start;
+  }
+
+  .card {
+    border-radius: 0;
+    border: none;
+  }
+
+  label {
+    text-align: left;
+  }
+}
 </style>
