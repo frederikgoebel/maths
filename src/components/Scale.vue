@@ -102,6 +102,7 @@ label,
 select,
 input,
 button {
+  border-radius: 0;
   font-size: 1.5rem;
   height: 2rem;
   padding: 0.4rem 0.6rem;
