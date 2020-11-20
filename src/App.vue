@@ -38,4 +38,10 @@ body {
   font-family: freight-text-pro;
   background: #f3f0ec;
 }
+
+@media only screen and (max-width: 760px) {
+  #app {
+    justify-content: start;
+  }
+}
 </style>

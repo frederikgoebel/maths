@@ -123,10 +123,17 @@ form {
   flex-direction: column;
 }
 
+input:disabled {
+  border: 1px solid black;
+  border-right: none;
+  background: white;
+}
+
 input {
   flex: 1;
   margin: 0;
-  width: 8em;
+  width: 5rem;
+  background: white;
   margin-bottom: 0.3em;
   border: 1px solid black;
   padding-left: 0.5em;
@@ -138,7 +145,7 @@ input {
 button {
   margin: 0;
 
-  background: white;
+  background: transparent;
   border: 1px solid black;
   cursor: pointer;
   margin-left: 0;
@@ -150,8 +157,18 @@ button {
 }
 
 button:focus,
-input:focus {
+input:focus,
+select:focus {
   outline: none;
+}
+
+button:focus,
+select:focus {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.03);
 }
 
 fieldset {
@@ -177,6 +194,8 @@ select {
   -webkit-appearance: none; /* Safari and Chrome */
   appearance: none;
   width: 4rem;
+  background: transparent;
+  cursor: pointer;
 }
 
 .scaleInput {
@@ -202,6 +221,11 @@ select {
     flex-direction: column;
   }
 
+  h1 {
+    text-align: center;
+    width: 100%;
+  }
+
   .container {
     align-items: flex-start;
   }
@@ -209,6 +233,8 @@ select {
   .card {
     border-radius: 0;
     border: none;
+    padding: 0;
+    padding-top: 5rem;
   }
 
   label {
